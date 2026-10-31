@@ -47,7 +47,16 @@ The lines that work best are about things *you* have actually done.
 const EVERY_MINUTES = 120;
 ```
 
+**Quiet hours and away time:** also in `background.js`:
+
+```js
+const QUIET_START = 22; // 10 PM
+const QUIET_END = 8;    // 8 AM
+const AWAY_SECONDS = 15 * 60; // skip if you've been away 15+ minutes
+```
+
 After any change, click the reload ↻ icon on the extension in `chrome://extensions`.
+
 
 > Chrome needs to be open for reminders to arrive (minimized is fine).
 
