@@ -8,6 +8,8 @@ Every 2 hours, a window pops up on your screen with:
 
 You can also click the toolbar icon any time you need a boost.
 
+It's polite, too: no reminders between 10 PM and 8 AM, none while you're away from your computer, and never more than one window at a time.
+
 
 <img width="600" alt="reminder" src="https://github.com/user-attachments/assets/d7b0c9a5-043d-49d4-b14e-ea97db9097cc" />
 <img width="300" alt="popup" src="https://github.com/user-attachments/assets/b5ecda74-abcb-4d5f-9da8-ca7db2ea3d22" />
@@ -19,11 +21,12 @@ Job searching is a long game. Some days I'm unstoppable. Other days I open my la
 
 ## Install it (about 2 minutes)
 
-1. Click the green **Code** button on this page, then **Download ZIP**, and unzip it.
-2. In Chrome, go to `chrome://extensions`.
-3. Turn on **Developer mode** (top right).
-4. Click **Load unpacked** and choose the unzipped folder (the one that contains `manifest.json`).
-5. Click the puzzle-piece icon 🧩 in Chrome's toolbar and pin **You've Got This**.
+1. [Download the extension](https://github.com/SumedhaBillapati/Youve-Got-This/archive/refs/heads/main.zip) and unzip it.
+ (or) Click the green **Code** button on this page, then **Download ZIP**, and unzip it.
+3. In Chrome, go to `chrome://extensions`.
+4. Turn on **Developer mode** (top right).
+5. Click **Load unpacked** and choose the unzipped folder (the one that contains `manifest.json`).
+6. Click the puzzle-piece icon 🧩 in Chrome's toolbar and pin **You've Got This**.
 
 Click the icon, then **Preview the big reminder** to see one right away.
 
@@ -62,14 +65,8 @@ After any change, click the reload ↻ icon on the extension in `chrome://extens
 
 ## How it works
 
-| File | What it does |
-|------|--------------|
-| `manifest.json` | The extension's ID card: its name, icons, and the `alarms` permission |
-| `popup.html` / `popup.js` | The window you see when you click the toolbar icon |
-| `background.js` | Runs behind the scenes: sets a repeating 2-hour timer with Chrome's Alarms API and opens the reminder window when it goes off |
-| `reminder.html` / `reminder.js` | The big reminder window |
-| `messages.js` | The hype lines and actions, shared by the popup and the reminder |
-
+| `manifest.json` | The extension's ID card: its name, icons, and permissions (`alarms` for the timer, `idle` to check if you're at your computer) |
+| `background.js` | Runs behind the scenes: sets a repeating 2-hour timer, skips quiet hours and times you're away, and opens one reminder window at a time |
 Chrome doesn't let an extension open its toolbar popup by itself, so the timer opens a separate window instead. That's also why it can be big and centered.
 
 ## Built with
