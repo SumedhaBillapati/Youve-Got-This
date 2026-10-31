@@ -8,12 +8,10 @@ Every 2 hours, a window pops up on your screen with:
 
 You can also click the toolbar icon any time you need a boost.
 
-<p align="center">
-  <img src="screenshots/reminder.png" alt="The reminder window that pops up every 2 hours" width="600">
-</p>
-<p align="center">
-  <img src="screenshots/popup.png" alt="The toolbar popup" width="280">
-</p>
+
+<img width="1520" height="1040" alt="reminder" src="https://github.com/user-attachments/assets/d7b0c9a5-043d-49d4-b14e-ea97db9097cc" />
+<img width="640" height="504" alt="popup" src="https://github.com/user-attachments/assets/b5ecda74-abcb-4d5f-9da8-ca7db2ea3d22" />
+
 
 ## Why I built it
 
