@@ -23,10 +23,3 @@
   }
 }
 
-**Quiet hours and away time:** 
-
-```js
-const QUIET_START = 22; // 10 PM
-const QUIET_END = 8;    // 8 AM
-const AWAY_SECONDS = 15 * 60; // skip if you've been away 15+ minutes
-```
