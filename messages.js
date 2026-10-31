@@ -3,7 +3,7 @@
 
 // The big hype line
 const messages = [
-  "You've got this!!",
+  "You've got this Gurl !!",
   "Go get it!!",
   "Main character energy!!",
   "Showing up every day is grit.",
