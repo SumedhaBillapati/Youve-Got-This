@@ -71,6 +71,4 @@ HTML, CSS, JavaScript, and the Chrome Extensions API (Manifest V3).
 
 I came up with the idea, wrote the content, and tested it on my own job search. The code was written with [Claude](https://claude.ai) as my AI pair programmer.
 
-## License
 
-MIT. Use it, change it, share it.
